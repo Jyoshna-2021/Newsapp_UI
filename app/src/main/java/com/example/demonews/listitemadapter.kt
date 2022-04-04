@@ -26,10 +26,7 @@ class listitemadapter :
         return listViewHolder(view)
     }
 
-    override fun onBindViewHolder(
-        holder: listViewHolder,
-        position: Int
-    ) {
+    override fun onBindViewHolder(holder: listViewHolder, position: Int) {
         val itemlist = mList!![position] ?: return
         holder.Imgcatagory.setImageResource(itemlist.resourceId)
         holder.textcatagory.setText(itemlist.title_name)
@@ -41,7 +38,7 @@ class listitemadapter :
         } else 0
     }
 
-    inner class listViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+     class listViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val Imgcatagory: ImageView
         val textcatagory: TextView
 

@@ -39,7 +39,7 @@ class UserADAPTER :
         } else 0
     }
 
-    inner class userViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+    class userViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val Imgcatagory: ImageView
         val textcatagory: TextView
 
